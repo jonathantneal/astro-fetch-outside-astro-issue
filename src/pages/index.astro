@@ -1,0 +1,31 @@
+---
+import { fetched_metadata } from '../fetched.js'
+
+const metadata = await fetched_metadata
+---
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>{metadata.siteTitle}</title>
+</head>
+
+<body>
+	<h1>{metadata.siteTitle}</h1>
+	<nav>
+		<ul>
+			<li>
+				<a href="/">home</a>
+			</li>
+			<li>
+				<a href="/contact">contact</a>
+			</li>
+			<li>
+				<a href="/about">about</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+
+</html>
